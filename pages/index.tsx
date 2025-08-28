@@ -167,7 +167,6 @@ const tagColors: Record<string, string> = {
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<"projects" | "experience">("projects");
-{activeTab === "projects" && console.log("Projects content", projects)}
 
   return (
     <div
@@ -177,10 +176,10 @@ export default function Home() {
         <header className="text-center">
           <h1 className="text-3xl sm:text-4xl font-bold mt-6">Jose Barraza</h1>
           <p className="text-sm sm:text-base mt-4 text-gray-600 dark:text-gray-300 font-[family-name:var(--font-geist-mono)]">
-            Software engineer with over 10+ years of experience, and his entire
-            career has been focused on frontend development with JavaScript. His primary
-            technological stack includes JavaScript, TypeScript and React. He enjoys
-            tackling UI challenges, and he is an open-minded individual always ready to
+            Software engineer with over 10+ years of experience, and in my entire
+            career I have been focused on frontend development with JavaScript. My primary
+            technological stack includes JavaScript, TypeScript and React. I enjoys
+            tackling UI challenges, and I am is an open-minded individual always ready to
             assist others.
           </p>
         </header>
