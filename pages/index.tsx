@@ -75,81 +75,53 @@ const experience = [
   {
     title: "Senior Frontend Engineer",
     company: "Oracle",
-    date: "Aug 2021 – Present · 4 years",
-    description: `At Oracle, I build and maintain internal web applications using React with TypeScript and Redux, focused on scalable and maintainable solutions for advanced data workflows and AI/ML model interactions.`,
+    date: "Aug 2021 – Present",
+    description:
+      "Build and maintain internal apps with React + TypeScript and Next.js + Tailwind CSS (Oracle Content Management), focusing on scalable, maintainable UIs for advanced data workflows and AI/ML model interactions.",
     tech: [
-      "React", "TypeScript", "Redux", "Context API", "Storybook",
-      "Jest", "React Testing Library", "Cypress", "GitLab CI", "Artifactory", "Kubernetes", "Confluence"
+      "React", "Next.js", "TypeScript", "Redux", "Context API", "Tailwind CSS",
+      "Storybook", "Jest", "React Testing Library", "Cypress",
+      "REST", "GraphQL",
+      "GitLab CI/CD", "JFrog Artifactory", "Kubernetes", "Confluence"
     ],
     bullets: [
-      "Built complex UI features and AI workflows using React and Redux.",
-      "Designed components for AI/ML model selection and output visualization.",
-      "Created feature flows with Storybook for documentation and visual testing.",
-      "Wrote unit/integration tests with Jest, RTL; E2E tests with Cypress.",
-      "Handled deployments via GitLab CI/CD, Artifactory, and Kubernetes.",
-      "Collaborated with backend/data science teams on API contracts.",
-      "Documented features and decisions using Confluence.",
+      "Implemented complex features and reusable components; Context for lightweight state (theme, language) and Redux for async/multi-step flows.",
+      "Integrated AI/ML services: model selection, default-algorithm configuration, and real-time visualization of model outputs.",
+      "Established Storybook for component documentation and visual testing.",
+      "Ensured quality with Jest + RTL (unit/integration) and Cypress (E2E) aligned to critical user journeys.",
+      "Owned CI/CD: GitLab pipelines, artifact publishing to JFrog Artifactory, and Kubernetes deployments to production.",
+      "Collaborated with backend/data science to define API contracts and ensure seamless REST/GraphQL integrations.",
+      "Documented features and decisions in Confluence for alignment and onboarding."
     ],
-    project: "NWDAF Portal – Real-time analytics dashboard for 4G/5G data and AI model insights."
+    project:
+      "NWDAF Portal – Real-time analytics dashboard for 4G/5G network functions with dynamic tables, heatmaps, line & pie charts, plus AI-driven insights."
   },
   {
     title: "Frontend Engineer",
-    company: "Revelo / Numa",
-    date: "Apr 2019 – Jul 2021 · 2 years 4 months",
-    description: `Worked for Numa (client of Revelo), building web and mobile features for AI-powered dealership communication tools.`,
+    company: "Revelo (Numa by NumberAI)",
+    date: "Aug 2019 – Jul 2021",
+    description:
+      "Developed and maintained dealership-facing web apps powering AI-assisted customer conversations within the core Inbox platform.",
     tech: [
-      "React", "React Native", "TypeScript", "Redux", "Material-UI", "Storybook",
-      "Vite", "Cube.js", "Cypress", "Python", "Flask", "GraphQL", "Apollo", "PostgreSQL"
+      "React", "TypeScript", "Redux", "Context API",
+      "Material UI", "Storybook",
+      "Jest", "Cypress",
+      "GraphQL", "Apollo"
     ],
     bullets: [
-      "Developed Reports Page with Cube.js for real-time BI queries.",
-      "Maintained and updated React Native app (web, iOS, Android parity).",
-      "Enhanced Inbox web experience for AI-driven customer messaging.",
-      "Contributed to frontend, mobile, and some backend (Flask/Python).",
+      "Built dynamic, component-driven UIs in React + TypeScript with best-practice patterns.",
+      "Managed complex global state with Redux/Context, including asynchronous actions.",
+      "Shipped responsive, accessible interfaces with Material UI and consistent design tokens.",
+      "Created and documented reusable components in Storybook to drive team adoption.",
+      "Improved reliability with Jest unit tests and Cypress E2E flows, increasing CI confidence.",
+      "Integrated GraphQL queries/mutations for real-time updates and interactions.",
+      "Partnered with backend and product to scope features that enhanced the customer communication experience."
     ],
-    project: "Inbox & Reports – Conversational UI and analytics dashboards for dealerships."
-  },
-  {
-    title: "Frontend Engineer",
-    company: "Nextiva",
-    date: "Aug 2017 – Mar 2019 · 1 year 8 months",
-    description: `Built key communication platform features in a monorepo environment using React and TypeScript.`,
-    tech: [
-      "React", "TypeScript", "Redux", "Jest", "Storybook", "Chime SDK", "Lerna", "Git"
-    ],
-    bullets: [
-      "Created drag-and-drop UI for the Call Flow Builder.",
-      "Contributed to Cospace – a team messaging and meeting platform.",
-      "Worked on sales quotation management UI.",
-    ],
-    project: "Call Flow Builder – Dynamic UI for configuring voice call routing logic."
-  },
-  {
-    title: "Mid Frontend Engineer",
-    company: "EPAM Systems",
-    date: "Feb 2016 – Jul 2017 · 1 year 6 months",
-    description: `Contributed to UI development for global clients, gaining first exposure to React and Material-UI.`,
-    tech: [
-      "React", "Redux", "Material-UI", "Webpack", "Jest", "Enzyme", "Jenkins", "Git"
-    ],
-    bullets: [
-      "Created timeline calendar UI for airline crew management system.",
-    ],
-    project: "Altitude Crew Pairing – Calendar interface for airline crew scheduling."
-  },
-  {
-    title: "Jr Frontend Developer",
-    company: "Tata Consultancy Services",
-    date: "Jan 2015 – Jan 2016 · 1 year 1 month",
-    description: `Built and maintained landing pages for USAA insurance.`,
-    tech: ["HTML5", "CSS3", "JavaScript", "jQuery", "Git"],
-    bullets: [
-      "Developed accessible and responsive landing pages.",
-      "Participated in daily stand-ups and accessibility reviews.",
-    ],
-    project: "Auto Insurance Landing Pages – Responsive pages for quote generation."
-  },
+    project:
+      "Inbox Enhancements – Real-time updates, message threading, and AI-generated response interfaces supporting NLP-powered workflows."
+  }
 ];
+
 
 const tagColors: Record<string, string> = {
   "Next.js": "bg-black text-white",
@@ -176,7 +148,7 @@ export default function Home() {
         <header className="text-center">
           <h1 className="text-3xl sm:text-4xl font-bold mt-6">Jose Barraza</h1>
           <p className="text-sm sm:text-base mt-4 text-gray-600 dark:text-gray-300 font-[family-name:var(--font-geist-mono)]">
-            Software engineer with over 10+ years of experience, and in my entire
+            Software engineer with over 5+ years of experience, and in my entire
             career I have been focused on frontend development with JavaScript. My primary
             technological stack includes JavaScript, TypeScript and React. I enjoys
             tackling UI challenges, and I am is an open-minded individual always ready to
