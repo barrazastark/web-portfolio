@@ -215,28 +215,43 @@ export default function Home() {
         </header>
 
         <section>
-          <div className="flex justify-center gap-4 mb-6">
-            <button
-              className={`px-4 py-2 rounded-full text-sm font-medium ${
-                activeTab === "projects"
-                  ? "bg-black text-white dark:bg-white dark:text-black"
-                  : "bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
-              }`}
-              onClick={() => setActiveTab("projects")}
-            >
-              Projects
-            </button>
-            <button
-              className={`px-4 py-2 rounded-full text-sm font-medium ${
-                activeTab === "experience"
-                  ? "bg-black text-white dark:bg-white dark:text-black"
-                  : "bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
-              }`}
-              onClick={() => setActiveTab("experience")}
-            >
-              Work Experience
-            </button>
-          </div>
+          <div className="mb-6 flex items-center justify-between">
+  {/* Left: tabs */}
+  <div className="flex justify-center gap-4">
+    <button
+      className={`px-4 py-2 rounded-full text-sm font-medium ${
+        activeTab === "projects"
+          ? "bg-black text-white dark:bg-white dark:text-black"
+          : "bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
+      }`}
+      onClick={() => setActiveTab("projects")}
+    >
+      Projects
+    </button>
+
+    <button
+      className={`px-4 py-2 rounded-full text-sm font-medium ${
+        activeTab === "experience"
+          ? "bg-black text-white dark:bg-white dark:text-black"
+          : "bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
+      }`}
+      onClick={() => setActiveTab("experience")}
+    >
+      Work Experience
+    </button>
+  </div>
+
+  {/* Right: download */}
+  <a
+    href="/cv/Jose_Barraza_CV.pdf"
+    download
+    className="px-4 py-2 rounded-full text-sm font-medium bg-gray-900 text-white dark:bg-white dark:text-gray-900 hover:opacity-90 transition"
+    aria-label="Download CV (PDF)"
+  >
+    Download CV
+  </a>
+</div>
+
 
           {activeTab === "projects" ? (
   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
