@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import localFont from "next/font/local";
+import { track } from '@vercel/analytics';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -197,6 +198,13 @@ const tagColors: Record<string, string> = {
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<"projects" | "experience">("projects");
+  const cvHref = "/cv/Jose_Barraza_CV.pdf"
+
+  const handleDownload = () => {
+    track('download_cv', {
+      href: cvHref,
+    });
+  };
 
   return (
     <div
@@ -243,8 +251,9 @@ export default function Home() {
 
   {/* Right: download */}
   <a
-    href="/cv/Jose_Barraza_CV.pdf"
+    href={cvHref}
     download
+    onClick={handleDownload}
     className="px-4 py-2 rounded-full text-sm font-medium bg-gray-900 text-white dark:bg-white dark:text-gray-900 hover:opacity-90 transition"
     aria-label="Download CV (PDF)"
   >
