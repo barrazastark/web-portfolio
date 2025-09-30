@@ -73,7 +73,7 @@ const projects = [
 
 const experience = [
   {
-    title: "Senior Frontend Engineer",
+    title: "Frontend Engineer",
     company: "Oracle",
     date: "Aug 2021 – Present",
     description:
@@ -119,8 +119,66 @@ const experience = [
     ],
     project:
       "Inbox Enhancements – Real-time updates, message threading, and AI-generated response interfaces supporting NLP-powered workflows."
+  },
+  {
+    title: "Frontend Engineer",
+    company: "Nextiva",
+    date: "Aug 2017 – Mar 2019",
+    description:
+      "Contributed to core web apps in an Agile/Scrum environment using React, Redux, and strong testing practices.",
+    tech: [
+      "HTML", "CSS", "JavaScript", "TypeScript",
+      "React", "Redux", "Storybook",
+      "Jest", "React Testing Library",
+      "AWS Chime SDK", "Git"
+    ],
+    bullets: [
+      "Built a visual Call Flow Builder with interconnected nodes for configuring inbound call flows.",
+      "Delivered features for Cospace (meetings, messaging, screen/file sharing, tasks) leveraging AWS Chime SDK.",
+      "Implemented improvements in Sales Quote for managing quotations and leads.",
+      "Practiced code reviews and testing (Jest, RTL) to maintain quality and stability.",
+      "Participated in Scrum ceremonies (stand-ups, grooming, planning, retros) to drive iterative delivery."
+    ],
+    project:
+      "Call Flow Builder – Node-based UI to design and manage complex inbound call routing."
+  },
+  {
+    title: "Mid Frontend Engineer",
+    company: "EPAM Systems",
+    date: "Feb 2016 – Jul 2017",
+    description:
+      "UI-focused development for multiple clients, introducing and applying React/Redux patterns and modern tooling.",
+    tech: [
+      "HTML", "CSS", "JavaScript", "React", "Redux",
+      "Webpack", "Jest", "Enzyme", "Git", "Jenkins"
+    ],
+    bullets: [
+      "Implemented a timeline calendar for Altitude Crew Pairing to manage crew itineraries.",
+      "Developed reusable React components and Redux data flows for client features.",
+      "Contributed to build/test pipelines with Webpack, Jest/Enzyme, and Jenkins."
+    ],
+    project:
+      "Altitude Crew Pairing – Timeline calendar UI for scheduling and managing airline crew assignments."
+  },
+  {
+    title: "Junior Frontend Engineer",
+    company: "Tata Consultancy Services",
+    date: "Jan 2015 – Jan 2016",
+    description:
+      "Delivered responsive landing pages and contributed to accessibility reviews for USAA.",
+    tech: [
+      "HTML5", "CSS3", "JavaScript", "jQuery", "Git"
+    ],
+    bullets: [
+      "Built and iterated on accessible, responsive landing pages for marketing initiatives.",
+      "Collaborated in daily stand-ups and review sessions to ensure delivery quality."
+    ],
+    project:
+      "USAA Landing Pages – Reusable, responsive templates aligned with accessibility guidelines."
   }
 ];
+
+
 
 
 const tagColors: Record<string, string> = {
@@ -148,7 +206,7 @@ export default function Home() {
         <header className="text-center">
           <h1 className="text-3xl sm:text-4xl font-bold mt-6">Jose Barraza</h1>
           <p className="text-sm sm:text-base mt-4 text-gray-600 dark:text-gray-300 font-[family-name:var(--font-geist-mono)]">
-            Software engineer with over 5+ years of experience, and in my entire
+            Software engineer with over 10+ years of experience, and in my entire
             career I have been focused on frontend development with JavaScript. My primary
             technological stack includes JavaScript, TypeScript and React. I enjoys
             tackling UI challenges, and I am is an open-minded individual always ready to
