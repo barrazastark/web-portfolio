@@ -53,12 +53,6 @@ const projects = [
     tags: ["Next.js", "React", "Tailwind", "Arcade"],
   },
   {
-    slug: "social-feed",
-    title: "Social Feed App",
-    image: "/projects/SOCIALFEED.png",
-    tags: ["Next.js", "React", "Tailwind", "Blog", "Multimedia"],
-  },
-  {
     slug: "trending-articles",
     title: "Trending Articles",
     image: "/projects/TRENDING.png",
